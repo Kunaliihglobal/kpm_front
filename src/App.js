@@ -3,10 +3,12 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import CreateItem from "./pages/CreateItem";
 import EditItem from "./pages/EditItem";
+import axios from "axios";
 
 setInterval(() => {
-  
-}, 3000);
+  axios.get('https://kpm-front.onrender.com/')
+  console.log("self ping")
+}, 30000);
 
 const App = () => (
     <Router>

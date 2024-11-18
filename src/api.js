@@ -11,5 +11,5 @@ export const getItems = () => api.get("/search");
 // ?id=6735dde71c874a5ae69d2a36
 export const getItemById = (id) => api.get(`/search/id?id=${id}`);
 export const createItem = (data) => api.post("/add", data);
-export const updateItem = (id, data) => api.put(`/update/${id}`, data);
-export const deleteItem = (id) => api.delete(`/delete/${id}`);
+export const updateItem = (id, data) => api.put(`/update?id=${id}`, data);
+export const deleteItem = (id) => api.delete(`/delete?id=${id}`);
